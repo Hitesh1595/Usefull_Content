@@ -1,0 +1,10 @@
+For .pyc file ignore
+
+find . -name "*.pyc" -exec git rm -f "{}" \;
+
+
+to remove add file in git 
+git rm --cached db.sqlite3
+
+
+git config --global user.name "hitesh"
