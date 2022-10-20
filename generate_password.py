@@ -1,4 +1,4 @@
-used to generate random password
+#used to generate random password
 
 import string
 import secrets
