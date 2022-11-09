@@ -1,0 +1,10 @@
+{
+    "name": "hit",
+    "class": 123,
+    "last": "lower",
+    "titles": [
+        "eng",
+        "btech"
+    ],
+    "child": false
+}
