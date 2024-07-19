@@ -1,2 +1,135 @@
-how to send and retrive value into diffrent database in frappe
+https://github.com/D-codE-Hub/ERPNext-installation-Guide
+
+Youtube …
+
+https://www.youtube.com/watch?v=59Zu-S5QXn0&t=650s
+
+
+sudo apt-get install git
+
+sudo apt-get install python3-dev
+
+sudo apt-get install python3-setuptools python3-pip
+
+sudo apt-get install virtualenv
+
+sudo apt install python3.8-venv
+
+if python version 10 is present
+
+ sudo apt install python3.10-venv
+ 
+ 
+ ----------------------for mariadb ------------------------ 20.04 version
+ 
+ sudo apt-get install software-properties-common
+sudo apt-key adv --fetch-keys 'https://mariadb.org/mariadb_release_signing_key.asc'
+sudo add-apt-repository 'deb [arch=amd64,arm64,ppc64el] https://ftp.icm.edu.pl/pub/unix/database/mariadb/repo/10.3/ubuntu focal main'
+sudo apt update
+sudo apt install mariadb-server
+
+
+
+-----------------------------------------------------------------
+sudo mysql_secure_installation
+sudo nano /etc/mysql/my.cnf
+
+
+
+add this to the my.cnf file
+
+
+[mysqld]
+character-set-client-handshake = FALSE
+character-set-server = utf8mb4
+collation-server = utf8mb4_unicode_ci
+
+[mysql]
+default-character-set = utf8mb4
+Now press (Ctrl-X) to exit
+
+sudo service mysql restart
+
+sudo apt-get install redis-server
+
+
+
+install version 14.XXX node
+
+sudo apt-get install curl
+curl -sL https://deb.nodesource.com/setup_14.x | sudo -E bash -
+sudo apt-get install -y nodejs
+
+sudo npm install -g yarn
+sudo apt-get install xvfb libfontconfig wkhtmltopdf
+
+
+sudo -H pip3 install frappe-bench
+sudo -H pip3 install frappe-bench==5.10.1
+
+
+bench --version
+
+
+bench init frappe-bench --frappe-branch version-13
+
+cd frappe-bench/
+bench start
+bench new-site demo.com
+
+
+bench get-app erpnext --branch version-13
+###OR
+bench get-app https://github.com/frappe/erpnext --branch version-13
+
+bench --site demo.com install-app erpnext
+
+bench start
+
+
+Other command
+
+sudo -H pip3 install frappe-bench==5.10.1
+
+
+
+
+npm install -g node@10.9.0
+
+
+Install specific version of node 
+
+
+sudo apt install curl 
+curl https://raw.githubusercontent.com/creationix/nvm/master/install.sh | bash
+source ~/.profile
+nvm install 14.15.0
+
+
+
+
+https://github.com/D-codE-Hub/Guide-to-Install-Frappe-ERPNext-in-Ubuntu-22.04-LTS
+
+
+sudo mysql -uroot -pPASSWORD -Bse "GRANT ALL PRIVILEGES ON *.* TO 'root'@'localhost' IDENTIFIED BY 'root' WITH GRANT OPTION;"
+
+
+
+
+
+
+After install…………………………..frappe-instance
+
+
+Bench enable-scheduler
+
+
+Bench set-config developer_mode 1
+
+
+
+
+
+
+
 
