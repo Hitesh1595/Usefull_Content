@@ -1,0 +1,44 @@
+mern setup
+
+install npm global... and install node.js --- using nvm(node version manager)
+
+
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | bash
+
+nvm install 16
+
+node --version
+npm --version
+
+npm install -g npm
+npm install -g create-react-app (for global)
+
+
+setup start from here for any app -----------------------------------------
+
+
+create folder any name (MERN)
+
+frontend
+
+--->npx create-react-app my-app 
+
+in that folder install ----> npm install react-router-dom
+
+
+backend
+
+
+in MERN folder for backend setup
+
+npm init ---> for basic pakage setup
+
+npm install express --> for express installation
+npm install -g nodemon -- > server automatically restart for every save for global install pass -g
+
+
+
+
+
+
+

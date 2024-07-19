@@ -1,0 +1,55 @@
+mongodb setup
+
+
+https://www.mongodb.com/docs/manual/tutorial/install-mongodb-on-ubuntu/
+
+
+sudo systemctl status mongod
+sudo systemctl enable mongod
+
+
+stop
+sudo systemctl stop mongod
+
+
+restart
+sudo systemctl restart mongod
+
+
+run
+mongosh
+
+for gui setup -->
+https://www.mongodb.com/try/download/compass ----- download and install
+
+
+-----------------------------------------------------------------------------------------------------
+
+show dbs  ---> for showing database collection
+
+use databaseName ----> switch to that database
+
+-----------------------------------------------------------------------------------------------------
+
+after select dataBase -- create Collection
+
+
+db.createCollection("students")----> means table
+
+db.dropDatabase() ---> drop database
+
+
+in database.
+
+db.students.insertOne({name:"hitesh",age:28,grade:"A"})
+
+
+
+
+
+
+
+
+
+
+
