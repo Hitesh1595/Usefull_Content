@@ -1,0 +1,30 @@
+sudo apt update
+
+pqsl -V ---- check version
+
+sudo -i -u postgres
+psql
+
+
+CREATE USER user_name WITH PASSWORD 'password';
+
+Grant privileges (optional)
+
+ALTER USER hitesh WITH SUPERUSER;
+
+
+
+List all databases:   \l
+
+Connect to a specific database:    \c your_database
+
+List all users (roles):   \du
+
+
+Exit psql:    \q
+
+
+
+for serverless postgresql database setup
+
+https://neon.tech/
