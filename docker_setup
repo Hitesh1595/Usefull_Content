@@ -1,0 +1,35 @@
+
+for basic setup
+
+https://docs.docker.com/engine/install/ubuntu/
+
+sudo docker --version
+docker compose version
+
+sudo docker run hello-world
+
+
+docker hub
+
+
+To use the access token from your Docker CLI client:
+
+
+docker login -u hitesh1595
+crenditials
+
+
+
+
+docker build .  for build docker file
+
+docker compose build  --> docker compose file
+
+
+run command(docker)
+
+sudo docker compose run --rm app sh -c "flake8"
+
+sudo docker compose run --rm app sh -c "django-admin startproject app ."
+
+ sudo docker compose up --> start docker
